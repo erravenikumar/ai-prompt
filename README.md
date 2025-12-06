@@ -27,3 +27,11 @@ Ollama installed and running on your machine (Linux/macOS/WSL).
 Model pulled in Ollama, for example:
 
 ollama pull llama3.2:latest
+
+
+```bash
+curl -X POST http://localhost:8080/api/ai/chat \
+  -H "Content-Type: application/json" \
+  -d '{"prompt":"analyze NSE stocks with high volume"}'
+
+```
